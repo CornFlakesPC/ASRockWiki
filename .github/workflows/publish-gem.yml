@@ -3,6 +3,10 @@ name: Publish Ruby Gem
 on:
   workflow_dispatch
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   build:
     name: Publish
